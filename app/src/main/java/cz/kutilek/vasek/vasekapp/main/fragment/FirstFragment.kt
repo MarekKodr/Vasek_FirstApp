@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide
 import cz.kutilek.vasek.vasekapp.MainActivity
 import cz.kutilek.vasek.vasekapp.R
 import cz.kutilek.vasek.vasekapp.main.viewmodel.FirstViewModel
+import cz.kutilek.vasek.vasekapp.utils.StringUtil
 import kotlinx.android.synthetic.main.fragment_first.*
 
 class FirstFragment : Fragment() {
@@ -48,7 +49,7 @@ class FirstFragment : Fragment() {
     private fun setView() {
         //observe method from viewModel. after value is changed, observer receives updated data
         viewModel.getData().observe(this, Observer {data ->
-            titleTextView.text = data
+            titleTextView.text = StringUtil.transformString(data, ";")
         })
 
         Glide.with(activity as MainActivity)
