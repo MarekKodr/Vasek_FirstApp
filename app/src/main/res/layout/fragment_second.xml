@@ -20,4 +20,12 @@
             android:layout_height="wrap_content"
             android:text="Load Data"/>
 
+            <Button
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back"/>
+
+
+
 </LinearLayout>

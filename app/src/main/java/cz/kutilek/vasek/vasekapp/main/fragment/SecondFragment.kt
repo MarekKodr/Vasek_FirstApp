@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 
 import cz.kutilek.vasek.vasekapp.R
 import cz.kutilek.vasek.vasekapp.main.viewmodel.FirstViewModel
@@ -45,6 +46,9 @@ class SecondFragment : Fragment() {
             viewModel.loadData()
         }
 
+        goBack.setOnClickListener {
+            findNavController().popBackStack()
+        }
     }
 
 

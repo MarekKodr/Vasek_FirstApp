@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.Glide
+import cz.kutilek.vasek.vasekapp.MainActivity
 import cz.kutilek.vasek.vasekapp.R
 import cz.kutilek.vasek.vasekapp.main.viewmodel.FirstViewModel
 import kotlinx.android.synthetic.main.fragment_first.*
@@ -48,6 +50,11 @@ class FirstFragment : Fragment() {
         viewModel.getData().observe(this, Observer {data ->
             titleTextView.text = data
         })
+
+        Glide.with(activity as MainActivity)
+            .load("https://www.kucharidodomu.cz/upload/obrazky/firmy/obrazek-331-1.jpg")
+            .into(myImage)
+
     }
 
 }
