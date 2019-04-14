@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VasekApp</string>
+    <string name="click_me">Klikni na mě</string>
+    <string name="hint">nápověda</string>
+</resources>

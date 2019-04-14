@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".main.fragment.FirstFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center">
+
+        <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/title_height"
+                android:text="Hello World!"
+                android:textColor="@color/title"
+                android:textSize="50sp"/>
+
+        <Button
+                android:id="@+id/lickMeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/click_me"/>
+
+        <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:freezesText="true"
+                android:hint="@string/hint"/>
+
+        <View android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:elevation="8dp"
+              android:background="@color/colorAccent"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@mipmap/ic_launcher"/>
+
+        <Button
+                android:id="@+id/goToSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/go_to_next"/>
+
+    </LinearLayout>
+
+</ScrollView>
